@@ -1,0 +1,173 @@
+/* ----------Media Queries------------ */
+/* For small screens */
+@media (max-width: 790px) {
+    .toggleBtn {
+      display: block;
+    }
+  
+    .nav-links {
+      font-size: 1rem;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      background-color: #141414;
+      position: absolute;
+      padding: 10px;
+      border-radius: 10px;
+      top: 5rem;
+      right: 5%;
+      left: 5%;
+      display: none;
+      z-index: 1000;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 5px 0;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+      opacity: 1;
+    }
+  
+    #header {
+      width: 100%;
+      height: 100vh;
+      /* background: url(../images/n.webp) no-repeat center center/cover; */
+    }
+  
+    .header-image img{
+      width: 344px;
+      height: 400px;
+    }
+  
+    .header-text {
+      background-color: #000000;
+      padding: 20px;
+      position: absolute;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: right;
+      right: 10%;
+      left: 10%;
+      bottom: 10%;
+      opacity: 0.8;
+    }
+  
+    .name-span {
+      font-size: 50px;
+      color: #0ce8ab;
+    }
+  
+    .header-text p {
+      margin-bottom: 1rem;
+    }
+  
+    #aboutMe-header {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 910px) {
+    .aboutRow {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .imageCol {
+      flex-basis: 100%;
+    }
+  
+    .imageCol img {
+      width: 90%;
+      border-radius: 20px;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .textCol {
+      flex-basis: 100%;
+      padding-left: 0;
+    }
+  
+    .service {
+      padding: 30px;
+      font-size: 1rem;
+    }
+  
+    .service-header,
+    #service-header {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    .contactRow {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-info {
+      flex-basis: 100%;
+    }
+  
+    .contact-forms {
+      flex-basis: 100%;
+      padding-left: 0;
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .header-text {
+      font-size: 18px;
+    }
+  
+    .name-span {
+      font-size: 40px;
+    }
+  
+    #downloadBtn,
+    #hireBtn {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .imageCol img {
+      width: 100%;
+      border-radius: 10px;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    #aboutMe-header {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  
+    #aboutMe-text {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  
+    .page-paragraph {
+      font-size: 1rem;
+      color: #0ce8ab;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  
+    .qualify-links {
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #0ce8ab;
+      cursor: pointer;
+      position: relative;
+    }
+  }
