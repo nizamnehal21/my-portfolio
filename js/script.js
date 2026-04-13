@@ -3,13 +3,49 @@ const toggleButton = document.querySelector('.toggleBtn');
 const navbarLinks = document.querySelector('.nav-links');
 
 toggleButton.addEventListener('click', (e) => {
-  e.preventDefault(); // Prevents the default behavior of the anchor element
+  e.preventDefault();
   navbarLinks.classList.toggle('active');
-//   remove nav links after clicking a link
-    navbarLinks.addEventListener('click', (e) => {
-        navbarLinks.classList.remove('active');
-    });
 });
+
+navbarLinks.addEventListener('click', () => {
+  navbarLinks.classList.remove('active');
+});
+
+// Typing animation
+const texts = [
+ "Front-End Developer",
+  "React.js Developer",
+  "JavaScript Enthusiast",
+  "UI/UX Focused Developer",
+  "Responsive Web Designer",
+  "Tailwind CSS & Bootstrap Expert",
+  "Git & GitHub User",
+  "Always Learning New Things"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1000);
+  } else {
+    setTimeout(type, 60);
+  }
+})();
 
 // Qualification section
 let tablinks = document.getElementsByClassName("qualify-links");

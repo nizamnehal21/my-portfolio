@@ -96,7 +96,7 @@ nav {
   display: none;
 }
 
-.header-image img{
+.header-image img {
   width: 586px;
   position: absolute;
   top: 117px;
@@ -112,6 +112,29 @@ nav {
 .name-span {
   font-size: 80px;
   color: #0ce8ab;
+}
+
+#typing {
+  color: #0ce8ab;
+}
+
+#typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 #hireBtn {
@@ -503,4 +526,3 @@ nav {
   text-align: center;
   font-size: 1.2rem;
 }
-
