@@ -19,7 +19,7 @@ This project showcases personal information, skills, projects, and contact detai
 
 ## 📁 GitHub Repository
 
-🔗 https://github.com/nizamnehal21/my-portfolio.git
+🔗 https://github.com/nizamnehal/my-portfolio.git
 
 ---
 
@@ -76,7 +76,7 @@ This portfolio website was created to present personal projects, technical skill
 1. Clone repository
 
 ```
-git clone https://github.com/nizamnehal21/my-portfolio.git
+git clone https://github.com/nizamnehal/my-portfolio.git
 ```
 
 2. Open the project folder
@@ -89,7 +89,7 @@ git clone https://github.com/nizamnehal21/my-portfolio.git
 
 **Md Nizamuddin**
 
-GitHub: https://github.com/nizamnehal21
+GitHub: https://github.com/nizamnehal
 
 ---
 
